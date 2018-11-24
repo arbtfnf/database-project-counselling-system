@@ -35,6 +35,13 @@ app.use((req, res, next) => {
 
 app.use(express.static(__dirname + '/public'));
 
+app.get('/',(req,res) => {
+    res.render('home.hbs',{
+        pageTitle: 'Predictions',
+        welcomeMessage: 'Education is not the filling of a pail, but the lighting of a fire'
+    });
+});
+
 app.get('/login',(req,res) => {
     res.render('login.hbs',{
         pageTitle: 'Information',
