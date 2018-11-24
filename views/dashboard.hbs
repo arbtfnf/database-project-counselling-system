@@ -2,6 +2,22 @@
 <html>
 <title> student details</title>
 <style>
+
+
+
+.navbar {
+    overflow: hidden;
+    background-color:black ;
+    font-family:Copperplate Gothic Bold;
+}
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
 body {
   font-family: Copperplate Gothic Bold;
  
@@ -44,15 +60,24 @@ div.container {
     padding: 20px;
 }
 
+
+
 </style>
 <body>
 
-<center><font face="Copperplate Gothic Bold" font size="6" color="blue">Student details</font></center>
-<div class="container">
-  <form action="/student.html">
-   
-<label for="reg name">
 
+<div class="navbar">
+                <a href="#home">Home</a>
+            <a href="#Student Details"><font face="Copperplate Gothic Bold" font size="3" color="blue">Student details</font></a>
+             </font>   <a href="#Conselling">Conselling</a>
+                <a href="#logout">Logout</a>
+<form action="">
+				</div>
+
+<br>
+<br>
+
+      
 <font face="Copperplate Gothic Bold" font size="3" color="white">
 Registration Name</font></label>
     <input type="text" id="Registration name" name="Registration name" placeholder="Your Registration name..">
@@ -130,17 +155,10 @@ First Name></font></label>
 		
     <label for="pno"><font face="Copperplate Gothic Bold" font size="3" color="white">phone number </font></label>
     <input type="text" id="pno" name="phone number" placeholder="your Phone number ..">
-	
-	
-	<center><a href="conselling.html"> <font face="Copperplate Gothic Bold" font color="skyblue" size="+2">Submit</font></a></center>
-	
-  </form>
-</div>
-<br>    
-<center> <a href="intoduction.html"><font face="Copperplate Gothic Bold" font color="white" size="+2">
- logout
- </font></a></center>
-<br>
-{{> footer}}
-</body>    
+
+</form>
+
+
+
+</body>          
 </html>
